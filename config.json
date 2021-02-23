@@ -1,0 +1,26 @@
+{
+  "LSTM":
+  {
+    "verbose": 1,
+    "epochs": 30,
+    "batch_size": 32,
+    "layers": {
+      "1": {
+        "type": "LSTM",
+        "n_neurons": 150,
+        "activation": "relu",
+        "input_shape": {
+        	"timesteps": 24,
+        	"features": 1
+        }
+      },
+	  "2":{
+	  	 "type": "Dense",
+	  	 "n_neurons": 24
+	  }
+    },
+    "loss": "mse",
+    "optimizer": "adam"
+
+  }
+}
